@@ -12,7 +12,7 @@ const intro = [
     "I was minding my own business and boom!",
     "I feel terrible but",
     "I regretfully cannot attend,",
-    "This is going to sounds like an excuse but",
+    "This is going to sound like an excuse but",
 ]
 
 const scapegoat = [
@@ -33,8 +33,8 @@ const delay = [
     "died in front of me",
     "won't stop telling me knock knock jokes",
     "is having a nervous breakdown",
-    "gave my syphilis",
-    "poured lemoade in my gas tank",
+    "gave me syphilis",
+    "poured lemonade in my gas tank",
     "stabbed me",
     "found my box of human teeth",
     "stole my bicycle",
@@ -42,7 +42,6 @@ const delay = [
 ]
 
 document.addEventListener("DOMContentLoaded", () => {
-
     let header = document.getElementById("excuse")
     const excuse = intro.sample().concat(" ", scapegoat.sample(), " ", delay.sample(), "!")
     header.innerHTML = excuse
